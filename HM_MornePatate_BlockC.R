@@ -170,7 +170,7 @@ paste(table(badRelationTF)[2],
 badRelation <- sortedCsr1[badRelationTF,]
 badRelation
 
-write.csv(badRelation, file="badRelation.csv")
+#write.csv(badRelation, file="badRelation.csv")
 
 
 ## 3. This section preps the data in the format required by ArchEd  ########
@@ -326,10 +326,6 @@ if  (lastCxt[i]==F) {
 
 
 ##### 6 - Plotting HM data via Graphviz and RGraphviz - by DTW 03.16.2018 #####
-library("Rgraphviz")
-library(glue)
-library(tidyr)
-library(dplyr)
 
 ## assign global node shape to ellipse and allow the ellipse to resize itself to surround the node's text
 attrs <- list(node=list(shape="ellipse", fixedsize=FALSE, graphssize = "34, 22"))
